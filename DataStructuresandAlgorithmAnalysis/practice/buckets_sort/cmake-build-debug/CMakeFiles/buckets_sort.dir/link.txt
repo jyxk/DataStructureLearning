@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\buckets_sort.dir/objects.a
+C:\LLVM\bin\ar.exe cr CMakeFiles\buckets_sort.dir/objects.a @CMakeFiles\buckets_sort.dir\objects1.rsp
+C:\LLVM\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\buckets_sort.dir/objects.a -Wl,--no-whole-archive  -o buckets_sort.exe -Wl,--out-implib,libbuckets_sort.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\buckets_sort.dir\linklibs.rsp
