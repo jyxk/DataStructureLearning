@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\binarysearchtree.dir/objects.a
-C:\LLVM\bin\ar.exe cr CMakeFiles\binarysearchtree.dir/objects.a @CMakeFiles\binarysearchtree.dir\objects1.rsp
-C:\LLVM\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\binarysearchtree.dir/objects.a -Wl,--no-whole-archive  -o binarysearchtree.exe -Wl,--out-implib,libbinarysearchtree.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\binarysearchtree.dir\linklibs.rsp
