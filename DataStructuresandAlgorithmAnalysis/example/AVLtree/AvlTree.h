@@ -1,4 +1,6 @@
 #ifndef _AvlTree_H
+#include <stdio.h>
+#include <stdlib.h>
 
 struct AvlNode;
 typedef struct AvlNode *Position;
