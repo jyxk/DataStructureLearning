@@ -4,6 +4,7 @@
 struct Node;
 typedef struct Node *PtrToNode;
 typedef PtrToNode Stack;
+typedef int ElementType;
 
 int IsEmpty(Stack S);
 Stack CreateStack(void);
