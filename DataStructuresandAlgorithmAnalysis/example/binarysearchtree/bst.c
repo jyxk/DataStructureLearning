@@ -82,3 +82,7 @@ SearchTree Delete(ElementType X, SearchTree T) {
 
 	return T;
 }
+
+ElementType Retrieve(Position P) {
+	return P->Element;
+}
