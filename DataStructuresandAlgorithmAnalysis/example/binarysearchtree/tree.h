@@ -20,4 +20,4 @@ struct TreeNode {
     ElementType Element;
     SearchTree Left;
     SearchTree Right;
-}
+};

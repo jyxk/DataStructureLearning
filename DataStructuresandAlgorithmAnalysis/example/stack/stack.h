@@ -17,4 +17,4 @@ void Pop(Stack S);
 struct Node{
     ElementType Element;
     PtrToNode Next;
-}
+};

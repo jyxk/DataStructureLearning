@@ -1,5 +1,19 @@
 #include "AvlTree.h"
 
+static int Height(Position P);
+static int Max(int a, int b);
+static void FatalError(char* ErrorInfo);
+static void Error(char* ErrorInfo);
+
+static void Error(char* ErrorInfo) {
+    printf("%s", ErrorInfo);
+}
+
+static void FatalError(char* ErrorInfo) {
+    printf("%s", ErrorInfo);
+    exit(-1);
+}
+
 static int Height(Position P) {
     if (P == NULL)
         return -1;
@@ -62,7 +76,7 @@ static Position DoubleRotateWithLeft(Position K3) {
 
 static Position DoubleRotateWithRight(Position K3) {
     //Rotate between K1 and K2
-    K3->Right SingleRotateWithLeft(K3->Right);
+    K3->Right = SingleRotateWithLeft(K3->Right);
 
     return SingleRotateWithRight(K3);
 }

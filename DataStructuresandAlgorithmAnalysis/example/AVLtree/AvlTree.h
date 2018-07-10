@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 struct AvlNode;
-typedef struct AvlNode *Position;
-typedef struct AvlNode *AvlTree;
+typedef struct AvlNode* Position;
+typedef struct AvlNode* AvlTree;
 typedef int ElementType;
 
 AvlTree MakeEmpty(AvlTree T);
@@ -22,4 +22,4 @@ struct AvlNode {
     AvlTree Left;
     AvlTree Right;
     int Height;
-}
+};

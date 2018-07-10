@@ -26,4 +26,4 @@ struct QueueRecord{
     int Rear;
     int Size;
     ElementType *Array;
-}
+};
