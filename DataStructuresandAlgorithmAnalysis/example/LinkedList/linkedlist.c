@@ -1,5 +1,14 @@
 #include "list.h"
 #include <stdlib.h>
+
+List MakeEmpty(List L) {
+    if (L == NULL)
+        printf("L is not created");
+        DeleteList(L);
+        L->Next = NULL;
+        return L;
+}
+
 //return true if L is empty
 int IsEmpty(List L){
     return L->Next == NULL;
@@ -65,4 +74,39 @@ void Insert(ElementType X, List L, Position P){
     TmpCell->Element = X;
     TmpCell->Next = P->Next;
     P->Next = TmpCell;
+}
+
+void DeleteList(List L) {
+    Position p;
+    p = L->Next;
+    L->Next = NULL;
+
+    while (p != NULL) {
+        Position tmp;
+        tmp = p->Next;
+        free(p);
+        p = tmp;
+    }
+}
+
+Position Header(List L) {
+    return L;
+}
+
+Position First(List L) {
+    return L->Next;
+}
+
+Position Advance(Position P) {
+    return P->Next;
+}
+
+ElementType Retrieve(Position P) {
+    return P->Element;
+}
+
+void DeleteNext(Position P) {
+    Position tmp = P->Next->Next;
+    free(P->Next);
+    P->Next = tmp;
 }

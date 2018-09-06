@@ -1,4 +1,3 @@
-#define ElementType int
 #ifndef _List_H
 
 struct Node;
@@ -18,7 +17,8 @@ void DeleteList(List L);
 Position Header(List L);
 Position First(List L);
 Position Advance(Position P);
-
+ElementType Retrieve(Position P);
+void DeleteNext(Position P);
 #endif
 
 struct Node{
